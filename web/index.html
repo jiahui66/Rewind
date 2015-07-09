@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <title>Rewind</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+       
+        <!--
+        <div>
+            <input type="text" id="messageinput"/>
+        </div>
+        
+        <div>
+            <button type="button" onclick="openSocket();" >Open</button>
+            <button type="button" onclick="send();" >Send</button>
+            <button type="button" onclick="closeSocket();" >Close</button>
+        </div>
+        -->
+          
+        
+        <!-- Server responses get written here -->
+        <div id="messages"></div>
+
+       
+        <!-- file upload -->
+        <form id="jsonFile" name="jsonFile" enctype="multipart/form-data" method="post">
+
+            <fieldset>
+              <h2>Json File</h2>
+               <input type='file' id='fileinput'>
+               <input type='button' id='btnLoad' value='Load' onclick='loadFile();'>
+            </fieldset>
+          </form>
+        <div id="input"></div>
+
+
+        
+        <!-- Script to utilise the WebSocket -->
+        <script type="text/javascript" src="upload.js"></script>
+        
+        
+    </body>
+</html>
