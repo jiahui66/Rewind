@@ -56,23 +56,9 @@ public class sampleEndpoint {
     public void onMessage(String message, Session session){
         System.out.println("Message from " + session.getId() + ": " + message);
         try {
-            String output = "wer";
             String[] temp = message.split(";");
-            //System.out.println("temp[0] is: " + temp[0]);
             
-            ArrayList<String> output2 = App.Main(temp);     
-                    
-            /*int input = message;
-            int a = input%10;
-            int b = input/10;
-            int output1 = add.addConstant(a);
-            int output2 = add.multiply(b);
-            System.out.println("output1 is " + output1);
-            System.out.println("output2 is " + output2);
-            String output = String.valueOf(output1)+" & "+String.valueOf(output2);
-            */
-            
-            //System.out.println("output is: " + output);
+            ArrayList<String> output2 = App.Main(temp);      
 
             session.getBasicRemote().sendText(output2.toString());
         } catch (IOException ex) {
