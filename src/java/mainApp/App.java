@@ -17,19 +17,11 @@ import javax.jws.WebParam;
 import javax.ejb.Stateless;
 
 
-//import Audio.AudioManager;
-//import Audio.AudioSnap;
-//import Location.Location;
-//import Location.LocationManager;
 import Location2.Location2;
 import Location2.LocationManager2;
 import Surrounding.SurroundingDatabase;
 import Weather.WeatherDatabase;
 import Weather.WeatherInfo;
-//import Surrounding.SurroundingDatabase;
-//import Weather.WeatherDatabase;
-//import Weather.WeatherInfo;
-//import Weather.ishJava;
 
 import java.io.File;
 import java.sql.Date;
