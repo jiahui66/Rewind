@@ -19,14 +19,6 @@ import mainApp.App;
  * @author jiahuili
  */
 
-/** 
- * @ServerEndpoint gives the relative name for the end point
- * This will be accessed via ws://localhost:8080/EchoChamber/echo
- * Where "localhost" is the address of the host,
- * "sampleEndpoint" is the name of the package
- * and "sampleEndpoint" is the address to access this class from the server
- */
-
 
 @ServerEndpoint("/Endpoint")
 public class sampleEndpoint {
@@ -48,6 +40,7 @@ public class sampleEndpoint {
         }
     }
  
+    
     /**
      * When a user sends a message to the server, this method will intercept the message
      * and allow us to react to it. For now the message is read as a String.
