@@ -163,6 +163,7 @@ function loadFile() {
                         webSocket.send(inversedBatch);
                         webSocket.onmessage = function(evt){ 
                             writeResponse(evt.data);
+                            // TODO:
                         };
                           
                         
@@ -216,6 +217,7 @@ function loadFile() {
       webSocket.send(inversedBatch);
       webSocket.onmessage = function(evt){ 
           writeResponse(evt.data);
+          // TODO:
       };
       
      
