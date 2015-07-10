@@ -672,11 +672,11 @@ public ArrayList<Location2> modePrediction(ArrayList<Location2> inputLocation){
             // get start and end time of intervals
             System.out.println("start getting startsAndEndsOfIntervals!!!");
         ArrayList <String> startsAndEndsOfIntervals = this.getStartAndEndOfSubIntervels(samplesIndexReserved, samplesFromOutputLocations);	    
-        System.out.println("startsAndEndsOfIntervals got!!!");
+ 
 
         System.out.println("start getting reservedIntervals!!!");
         ArrayList<Location2> reservedIntervals = getAllLocationsExtrated(startsAndEndsOfIntervals, outputLocation);
-        System.out.println("reservedIntervals got!!!");
+
 
             return reservedIntervals;
     }       
@@ -696,7 +696,7 @@ public ArrayList<Location2> modePrediction(ArrayList<Location2> inputLocation){
             for(Integer i: reservedSampleIndicesFromOutputLocation){
                     reservedSamplesFromOutputLocations.add(samplesFromOutputLocations.get((int)i));
             }
-            System.out.println("reservedSamples got!!!");
+            //System.out.println("reservedSamples got!!!");
             return reservedSamplesFromOutputLocations;
     }
 
@@ -724,7 +724,7 @@ public ArrayList<Location2> modePrediction(ArrayList<Location2> inputLocation){
             }
         }		*/
 
-            System.out.println("reservedIntervals got!!!");
+            //System.out.println("reservedIntervals got!!!");
             return samplesIndexReserved;
     }       
 
