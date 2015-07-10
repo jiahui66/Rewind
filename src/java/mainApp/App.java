@@ -132,9 +132,9 @@ public class App {
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 java.util.Date milliseconds =  dateFormat.parse(tempTime);
 
-                //outputInfo = ReservedIntervals.get(i).latitude+","+ReservedIntervals.get(i).longitude+","+String.valueOf(milliseconds.getTime())+","+ReservedIntervals.get(i).mode+","+weatherTag.get(i).toString();
+                outputInfo = ReservedIntervals.get(i).latitude+","+ReservedIntervals.get(i).longitude+","+String.valueOf(milliseconds.getTime())+","+ReservedIntervals.get(i).mode+","+weatherTag.get(i).toString();
 
-                outputInfo = ReservedIntervals.get(i).toString()+","+weatherTag.get(i).toString();
+                //outputInfo = ReservedIntervals.get(i).toString()+","+weatherTag.get(i).toString();
                 temp.add(outputInfo);
                 System.out.println(outputInfo);
             }
