@@ -158,12 +158,10 @@ function loadFile() {
                         }
                         
                           //send in batch
-                          
-                          
                         webSocket.send(inversedBatch);
                         webSocket.onmessage = function(evt){ 
                             writeResponse(evt.data);
-                            // TODO:
+                            // TODO: front-End processing
                         };
                           
                         
@@ -217,61 +215,9 @@ function loadFile() {
       webSocket.send(inversedBatch);
       webSocket.onmessage = function(evt){ 
           writeResponse(evt.data);
-          // TODO:
+          // TODO: front-End processing
       };
       
-     
-                         
-      /*
-      webSocket.send(inversedBatch);
-      webSocket.onmessage = function(evt){ 
-          writeResponse(evt.data);
-      };
-      */  
-      
-      /*
-      // if the last batch has fewer than 500 points, still push it to server 
-      webSocket.send(inversedBatch);
-      webSocket.onmessage = function(evt){ 
-          writeResponse(evt.data);
-      };
-                
-      */
-         
-    /*    
-      // invserse the list
-      inversedBatch = "";
-      var times = 0;
-      for(index1 = batch.length-1; index1 >= 0; index1--){
-          //console.log(batch[index1]);
-          
-          //send in batch
-          if(times > 500){
-              webSocket.send(inversedBatch);
-              
-              webSocket.onmessage = function(evt){ 
-                  writeResponse(evt.data);
-              };
-              
-              inversedBatch = "";
-              times = 0;
-          }
-          
-          inversedBatch += batch[index1];
-          inversedBatch += ";";
-          
-          
-          times++;
-      }
-     
-      webSocket.send(inversedBatch);
-      
-      webSocket.onmessage = function(evt){ 
-          writeResponse(evt.data);
-      };
-      */
-
-        
     }
   }
 
