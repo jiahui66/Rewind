@@ -161,7 +161,7 @@ function loadFile() {
                         webSocket.send(inversedBatch);
                         webSocket.onmessage = function(evt){ 
                             writeResponse(evt.data);
-                            // TODO: front-End processing
+                            // TODO: Front-End processing
                         };
                           
                         
@@ -215,7 +215,7 @@ function loadFile() {
       webSocket.send(inversedBatch);
       webSocket.onmessage = function(evt){ 
           writeResponse(evt.data);
-          // TODO: front-End processing
+          // TODO: Front-End processing
       };
       
     }
